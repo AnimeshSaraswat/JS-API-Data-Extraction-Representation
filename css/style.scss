@@ -1,0 +1,181 @@
+/*Variables*/
+$button-text-color: #eee;
+$color-white: #fff;
+
+* {
+  box-sizing: border-box;
+}
+body, html {
+  background: url('../img/bg.jpg') no-repeat;
+  background-size: cover;
+  margin: 0px;
+}
+.row {
+  width: 100%;
+  overflow: hidden;
+}
+a {
+  text-decoration: none;
+  color: #eee;
+  font-size: 22px;
+  margin-left: 5px;
+}
+ul {
+  padding: 0px;
+}
+li {
+  list-style-type: none;
+  display: inline-block;
+  a {
+    margin: 0;
+  }
+}
+
+[class*="col-"] {
+  float: left;
+  position: relative;
+  vertical-align: top;
+}
+/*defining column's*/
+.col-1 {
+  width: 8.33%;
+
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both;
+}
+.wrapper {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.header {
+  min-height: 80px;
+  overflow: hidden;
+  background: rgba(17, 17, 17, 0.22);
+
+  div {
+    padding: 10px 20px;
+  }
+  .head-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: left;
+    .logo-responsive {
+      width: 60px;
+      height: 50px;
+    }
+    .logo-name {
+      color: $button-text-color;
+    }
+  }
+  .find-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: right;
+    height: 80px;
+
+    input {
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      font-size: 15px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+    input:focus {
+      outline: none;
+    }
+    button {
+      padding: 11px;
+      border: none;
+      border-bottom-right-radius: 5px;
+      border-top-right-radius: 5px;
+      background-color: rgb(39, 110, 140);
+      color: $button-text-color;
+      cursor: pointer;
+    }
+    button:hover {
+      color: $color-white;
+    }
+    button:focus {
+      outline: none;
+    }
+  }
+}
+
+#avatar {
+  display: none;
+}
+
+.container {
+  .wrapper {
+    margin-top: 50px;
+    .avatar-img {
+      img {
+        width: 200px;
+        height: 200px;
+        border: 1px solid $button-text-color;
+        padding: 5px;
+        margin: 0 auto;
+      }
+    }
+    .avatar-detail {
+      text-align: left;
+      color: $button-text-color;
+      padding-left: 100px;
+      h1 {
+        margin: 0px;
+      }
+      .project-detail {
+        overflow: hidden;
+      }
+      li {
+        margin: 10px 0px;
+      }
+      li:nth-child(3) {
+        width: 100%;
+      }
+    }
+  }
+}

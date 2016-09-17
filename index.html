@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script type="text/javascript" src="js/api.js">
+
+    </script>
+    <title>Github User Data Extraction</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="wrapper clearfix">
+        <div class="head-logo">
+          <img src="img/logo.png" alt="logo" class="logo-responsive"/>
+          <h3 class="logo-name">Github User Details</h3>
+        </div>
+        <div class="find-user">
+          <input type="text" id="user-input" placeholder="Please Enter User Name">
+          <button onclick="process()" id="eventTrigger">Get User!</button>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="wrapper clearfix" id="avatar">
+        <div class="row">
+          <div class="avatar-img col-3">
+            <img src="" id="user-avatar"/>
+          </div>
+          <div class="avatar-detail col-9">
+            <h1 id="avatar-name"></h1>
+            <p>
+              <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
+              <a href="#" id="avatar-email"></a>
+            </p>
+            <ul class="project-detail">
+              <li class="col-4"><a href="#">Followers: <span id="followers"></span></a></li>
+              <li class="col-4"><a href="#">Following: <span id="following"></span></a></li>
+              <li><a href="#">Repositories: <span id="repository"></span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
