@@ -25,19 +25,25 @@
     <div class="container">
       <div class="wrapper clearfix" id="avatar">
         <div class="row">
-          <div class="avatar-img col-3">
+          <div class="avatar-img col-6">
             <img src="" id="user-avatar"/>
+              <h2 id="user-name"></h2>
+              <button><a href="" id="github-profile">Visit Profile</a></button>
           </div>
-          <div class="avatar-detail col-9">
-            <h1 id="avatar-name"></h1>
+          <div class="avatar-detail col-6">
+            <h1 id="avatar-username"><i class="fa fa-user" aria-hidden="true"></i></h1>
             <p>
               <span><i class="fa fa-envelope" aria-hidden="true"></i></span>
-              <a href="#" id="avatar-email"></a>
+              <a href="" target="_blank" id="avatar-email"></a>
             </p>
-            <ul class="project-detail">
-              <li class="col-4"><a href="#">Followers: <span id="followers"></span></a></li>
-              <li class="col-4"><a href="#">Following: <span id="following"></span></a></li>
-              <li><a href="#">Repositories: <span id="repository"></span></a></li>
+            <ul class="project-detail col-12">
+              <li class="col-12"><a href="" target="_blank" id="followers-url"><i class="fa fa-users" aria-hidden="true"></i>
+Followers: <span id="followers"></span></a></li>
+              <li class="col-12"><a href="" target="_blank" id="following-url"><i class="fa fa-users" aria-hidden="true"></i>
+Following: <span id="following"></span></a></li>
+              <li><a href="" target="_blank" id="repository-url"><i class="fa fa-file-text" aria-hidden="true"></i>
+Repositories: <span id="repository"></span></a></li>
+              <li class="location"><i class="fa fa-map-marker" aria-hidden="true"></i><span id="location"></span></li>
             </ul>
           </div>
         </div>

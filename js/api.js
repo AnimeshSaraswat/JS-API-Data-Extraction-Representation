@@ -41,11 +41,18 @@ function handleServerResponse() {
       var avatar = document.getElementById('avatar');
       avatar.style.display = 'block';
       document.getElementById('user-avatar').src = userDetail.avatar_url;
-      document.getElementById('avatar-name').innerHTML = userDetail.name;
+      document.getElementById('user-name').innerHTML = userDetail.name;
+      document.getElementById('avatar-username').innerHTML = userDetail.login;
       document.getElementById('avatar-email').innerHTML = userDetail.email;
+      document.getElementById('avatar-email').href = 'https://mail.google.com/';
       document.getElementById('repository').innerHTML = userDetail.public_repos;
       document.getElementById('followers').innerHTML = userDetail.followers;
       document.getElementById('following').innerHTML = userDetail.following;
+      document.getElementById('followers-url').href = 'https://github.com/'+userName+'?tab=followers';
+      document.getElementById('following-url').href = 'https://github.com/'+userName+'?tab=following';
+      document.getElementById('repository-url').href = 'https://github.com/'+userName+'?tab=repositories';
+      document.getElementById('github-profile').href = 'https://github.com/'+userName;
+      document.getElementById('location').innerHTML = userDetail.location;
       setTimeout('process()', 1000);
     }else{
       alert('Something Went Wrong!');

@@ -152,6 +152,7 @@ li {
   .wrapper {
     margin-top: 50px;
     .avatar-img {
+      text-align: center;
       img {
         width: 200px;
         height: 200px;
@@ -159,22 +160,48 @@ li {
         padding: 5px;
         margin: 0 auto;
       }
+      h2 {
+        color: #eee;
+      }
+      button {
+        padding: 10px 20px;
+        border: 1px solid #eee;
+        border-radius: 3px;
+        box-shadow: 0px 0px 20px;
+        background-color: yellowgreen;
+        color: #eee;
+        margin-bottom: 15px;
+        a{
+          font-size: 15px;
+        }
+      }
     }
     .avatar-detail {
       text-align: left;
       color: $button-text-color;
-      padding-left: 100px;
       h1 {
         margin: 0px;
       }
       .project-detail {
         overflow: hidden;
       }
+      .location {
+        font-size: 22px;
+        .fa {
+          margin-left: 8px;
+        }
+        span {
+          margin-left: 10px;
+        }
+      }
       li {
         margin: 10px 0px;
       }
       li:nth-child(3) {
         width: 100%;
+        .fa {
+          margin-left: 5px;
+        }
       }
     }
   }
