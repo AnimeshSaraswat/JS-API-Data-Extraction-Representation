@@ -38,8 +38,6 @@ function handleServerResponse() {
   if(xmlHttp.readyState==4) {
     if(xmlHttp.status==200) {
       var userDetail = JSON.parse(xmlHttp.responseText);
-      var avatar = document.getElementById('avatar');
-      avatar.style.display = 'block';
       document.getElementById('user-avatar').src = userDetail.avatar_url;
       document.getElementById('user-name').innerHTML = userDetail.name;
       document.getElementById('avatar-username').innerHTML = userDetail.login;
@@ -53,6 +51,7 @@ function handleServerResponse() {
       document.getElementById('repository-url').href = 'https://github.com/'+userName+'?tab=repositories';
       document.getElementById('github-profile').href = 'https://github.com/'+userName;
       document.getElementById('location').innerHTML = userDetail.location;
+      document.getElementById('avatar').style.display = 'block';
       setTimeout('process()', 1000);
     }else{
       alert('Something Went Wrong!');
