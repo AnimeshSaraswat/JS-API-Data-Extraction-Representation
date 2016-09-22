@@ -51,7 +51,7 @@ function handleServerResponse() {
       document.getElementById('repository-url').href = 'https://github.com/'+userName+'?tab=repositories';
       document.getElementById('github-profile').href = 'https://github.com/'+userName;
       document.getElementById('location').innerHTML = userDetail.location;
-      document.getElementById('avatar').style.display = 'block';
+      document.getElementById('avatar').style.opacity = '1';
       setTimeout('process()', 1000);
     }else{
       alert('Something Went Wrong!');
